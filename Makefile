@@ -19,15 +19,15 @@ ALL_PDF = $(addprefix $(OUT_DIR)/, $(addsuffix .pdf, $(SECTIONS)))
 # The bibliography is specified in another argument
 ALL_PANDOC_SRC_ARGS = \
 	$(ALL_MD) \
-	$(META)
+	$(META) \
 
 ALL_SOURCE = \
 	$(ALL_PANDOC_SRC_ARGS) \
-	$(BIB)
+	$(BIB) \
+	$(SRC_DIR)/sections \
 
 .PHONY: pdf
 pdf: $(MAIN).pdf
-
 .PHONY: draft-pdf
 draft-pdf: $(MAIN)-draft.pdf
 
