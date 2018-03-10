@@ -28,6 +28,12 @@ ALL_SOURCE = \
 
 .PHONY: pdf
 pdf: $(MAIN).pdf
+.PHONY: docx
+pdf: $(MAIN).docx
+.PHONY: odt
+pdf: $(MAIN).odt
+.PHONY: tex
+pdf: $(MAIN).tex
 .PHONY: draft-pdf
 draft-pdf: $(MAIN)-draft.pdf
 

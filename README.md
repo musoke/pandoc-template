@@ -17,4 +17,7 @@ Each section has its own file.  There is a sub-directory for images.
 
 # Building
 
-You need `make`, `pandoc`, and `latex` installed.  Then simply run `make`.
+If you have `make`, `pandoc`, and `latex` installed simply run `make`.
+Output can be found in `output/`.
+
+If you have only `make` and `pandoc`, running `make odt` or `make docx` will generate a OpenDocument or docx file.
